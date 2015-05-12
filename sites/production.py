@@ -88,6 +88,7 @@ MEDIA_URL = '/media/'
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
 # STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'publish/static')
 STATIC_ROOT = 'publish/static/'
 
 # URL prefix for static files.
@@ -258,8 +259,8 @@ LOGGING = {
     }
 }
 
-CKEDITOR_UPLOAD_PATH = os.path.join(MEDIA_ROOT, 'uploads')
-CKEDITOR_MEDIA_PREFIX = "/static/ckeditor/"
+CKEDITOR_UPLOAD_PATH = os.path.join( MEDIA_ROOT, 'ckeditor/')
+CKEDITOR_MEDIA_PREFIX = "publish/static/ckeditor/"
 
 CKEDITOR_CONFIGS = {
     'default': {

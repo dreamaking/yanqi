@@ -258,7 +258,6 @@ LOGGING = {
 }
 
 CKEDITOR_UPLOAD_PATH = os.path.join( MEDIA_ROOT, 'ckeditor/')
-
 CKEDITOR_MEDIA_PREFIX = "publish/static/ckeditor/"
 
 CKEDITOR_CONFIGS = {
