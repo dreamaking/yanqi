@@ -4,10 +4,10 @@ from django.contrib import admin
 from yanqi import models
 
 
-class CompanyAdmin(admin.ModelAdmin):
-    list_display = ('company','phone', 'intro')
-    search_fields = ('company', 'phone')
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('title','content_display', 'publish_date', 'is_active')
+    search_fields = ('title', )
 
 
-admin.site.register(models.Company, CompanyAdmin)
+admin.site.register(models.Article, ArticleAdmin)
 

@@ -91,6 +91,7 @@ MEDIA_URL = 'media/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'publish/static')
 STATIC_URL = '/static/'
 
 LOGIN_URL = "/"
@@ -168,7 +169,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'yanqi',
-    #'ckeditor',
+    'ckeditor',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -256,8 +257,9 @@ LOGGING = {
     }
 }
 
-CKEDITOR_UPLOAD_PATH = os.path.join( MEDIA_ROOT, 'uploads')
-CKEDITOR_MEDIA_PREFIX = "/static/ckeditor/"
+CKEDITOR_UPLOAD_PATH = os.path.join( MEDIA_ROOT, 'ckeditor/')
+
+CKEDITOR_MEDIA_PREFIX = "publish/static/ckeditor/"
 
 CKEDITOR_CONFIGS = {
     'default': {

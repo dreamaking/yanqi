@@ -14,7 +14,7 @@ urlpatterns = patterns('',
     (r'^', include('yanqi.urls')),
     url(r'^w/manage/', include(admin.site.urls)),
     #url(r'^admin/', include(admin.site.urls)),
-    #(r'^ckeditor/', include('ckeditor.urls')),
+    (r'^ckeditor/', include('ckeditor.urls')),
     
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
