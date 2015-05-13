@@ -20,8 +20,8 @@
 		<div class="list-box">
             {% for article in articles %}
 			<a class="list-one" href="/article/get/{{article.id}}">
-				<div class="list-time">2015-01-27</div>
-				<div class="list-text">{{article.title}}}场馆</div>
+				<div class="list-time">{{article.publish_date}}</div>
+				<div class="list-text">{{article.title}}</div>
 			</a>
             {% endfor %}
 		</div>
