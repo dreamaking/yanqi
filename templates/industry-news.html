@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/yanqi.css">
+<script src="{{STATIC_URL}}js/cfg.js"></script>
+<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully" id="container">
+	<div class="top">
+		<div class="menu-btn" id="menu-btn"></div>
+		<span>行业动态</span>
+		<a class="top-home" href="homing.html"></a>
+	</div>
+	<div class="content yscroll">
+		<div class="list-title">行业的新闻动态：</div>
+		<div class="list-box">
+            {% for article in articles %}
+			<a class="list-one" href="/article/get/{{article.id}}">
+				<div class="list-time">2015-01-27</div>
+				<div class="list-text">{{article.title}}</div>
+			</a>
+            {% endfor %}
+		</div>
+	</div>
+</div>
+<script src="{{STATIC_URL}}js/menu.js"></script>
+<script>new Menu();</script>
+</body>
+</html>

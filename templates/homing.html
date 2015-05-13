@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>北京雁栖湖国际会展中心</title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/yanqi.css">
+<script src="{{STATIC_URL}}js/cfg.js"></script>
+<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully" id="container">
+	<div class="top">
+		<div class="menu-btn" id="menu-btn"></div>
+		<!-- <div class="top-logo"></div> -->
+		<span>北京雁栖湖国际会展中心</span>
+	</div>
+	<div class="content home-content">
+		<div class="swiper-wrapper">
+			<div class="home-pic swiper-slide">
+				<img src="{{STATIC_URL}}img/12.jpg">
+			</div>
+			<div class="home-pic swiper-slide">
+				<img src="{{STATIC_URL}}img/15.jpg">
+			</div>
+			<div class="home-pic swiper-slide">
+				<img src="{{STATIC_URL}}img/14.jpg">
+			</div>
+			<div class="home-pic swiper-slide">
+				<img src="{{STATIC_URL}}img/13.jpg">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="btm">版权所有 © 2015 北京雁栖湖国际会展中心 京ICP备8888</div>
+</div>
+<script src="{{STATIC_URL}}js/menu.js"></script>
+<script>new Menu();</script>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/swiper.min.css">
+<script src="{{STATIC_URL}}js/swiper.min.js"></script>
+<script>
+new Swiper(".content",{
+	autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+	pagination: '.swiper-pagination',
+    paginationClickable: true
+});
+</script>
+</body>
+</html>

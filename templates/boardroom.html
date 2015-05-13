@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/yanqi.css">
+<script src="{{STATIC_URL}}js/cfg.js"></script>
+<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully" id="container">
+	<div class="top">
+		<div class="menu-btn" id="menu-btn"></div>
+		<span>会场信息</span>
+		<a class="top-home" href="homing.html"></a>
+	</div>
+	<div class="content yscroll">
+		<div class="intro-pic">
+			<div class="swiper-wrapper">
+
+			    <div class="swiper-slide">
+					<img src="{{STATIC_URL}}img/22.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{{STATIC_URL}}img/20.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{{STATIC_URL}}img/21.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{{STATIC_URL}}img/23.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{{STATIC_URL}}img/24.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="{{STATIC_URL}}img/25.jpg">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	
+		<div class="intro-label">
+			<span>1F</span>
+		</div>
+		<div class="intro-spic">
+			<img src="{{STATIC_URL}}img/1f.png">
+		</div>
+
+		<div class="intro-label">
+			<span>2F</span>
+		</div>
+		<div class="intro-spic">
+			<img src="{{STATIC_URL}}img/2f.png">
+		</div>
+
+		<div class="intro-label">
+			<span>3F</span>
+		</div>
+		<div class="intro-spic">
+			<img src="{{STATIC_URL}}img/3f.png">
+		</div>
+		<div class="intro-label">
+			<span>LF</span>
+		</div>
+		<div class="intro-spic">
+			<img src="{{STATIC_URL}}img/lf.png">
+		</div>
+	</div>
+</div>
+<script src="{{STATIC_URL}}js/menu.js"></script>
+<script>new Menu();</script>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/swiper.min.css">
+<script src="{{STATIC_URL}}js/swiper.min.js"></script>
+<script>
+new Swiper(".intro-pic",{
+	autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+	pagination: '.swiper-pagination',
+    paginationClickable: true
+});
+</script>
+</body>
+</html>

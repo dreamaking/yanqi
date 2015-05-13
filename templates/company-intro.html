@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/yanqi.css">
+<script src="{{STATIC_URL}}js/cfg.js"></script>
+<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+</head>
+<body class="fully">
+<div class="container fully" id="container">
+	<div class="top">
+		<div class="menu-btn" id="menu-btn"></div>
+		<span>北控置业介绍</span>
+		<a class="top-home" href="homing.html"></a>
+	</div>
+	<div class="content yscroll">
+	    <div class="intro-pic">
+			<img src="{{STATIC_URL}}img/31.jpg">
+		</div>
+		<div class="intro-label">
+			<span>北控置业</span>
+		</div>
+		<div class="intro-txt">
+			<p>北京北控置业有限责任公司（简称“北控置业”）是北京控股集团有限公司的全资子公司，成立于2010年6月，注册资本为30.34亿人民币，业务涵盖保障性住房，物流地产，养老健康医疗，旅游会展，资产与资本运营 等领域。公司承担的雁栖湖国际会都项目负责2014年APEC领导人非正式会议设施的规划、设计、建设及运行管理等。公司承担的京原路7号公租房建设项目，被确定为北京市保障房建设的示范单位和标杆单位。公司恪守股东利益最大化，坚持绿色、低碳发展道路，坚持积极开拓、审慎专注的经营策略，通过充分整合集团系统内部资源和拓展社会资源开展市场化运作，积极推进各个板块的功能发展和业务建设，有效推动公司实现高端发展。</p>
+
+		</div>
+
+	</div>
+</div>
+<script src="{{STATIC_URL}}js/menu.js"></script>
+<script>new Menu();</script>
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/swiper.min.css">
+<script src="{{STATIC_URL}}js/swiper.min.js"></script>
+<script>
+new Swiper(".intro-pic",{
+	autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+	pagination: '.swiper-pagination',
+    paginationClickable: true
+});
+</script>
+</body>
+</html>
