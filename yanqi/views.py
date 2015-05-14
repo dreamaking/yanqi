@@ -16,7 +16,7 @@ LOG = logging.getLogger('django')
 def list_article(request, channel):
     result = {}
     template = channel + '.html'
-    articles = Article.objects.filter(channel=channel)
+    articles = Article.objects.filter(channel=channel).order_by('-publish_date')
     result['articles'] = articles
     return render_to_response(template, result, context_instance=RequestContext(request))
 
