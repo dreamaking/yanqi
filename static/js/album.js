@@ -1,5 +1,3 @@
-define(function(){
-
 function Album( selector ){
 	this.container = $( document.body );
 	this.selector = selector;
@@ -48,7 +46,3 @@ Album.prototype = {
 		});
 	}
 };
-
-return Album;
-	
-});
